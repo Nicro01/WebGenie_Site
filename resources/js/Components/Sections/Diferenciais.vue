@@ -15,6 +15,7 @@ export default {
 <template>
     <section
         class="min-h-screen flex flex-col max-lg:mt-20 items-center justify-center"
+        id="diferenciais"
     >
         <div class="flex flex-col lg:flex-row justify-between gap-10">
             <div class="lg:w-1/2 max-lg:px-10 self-start">

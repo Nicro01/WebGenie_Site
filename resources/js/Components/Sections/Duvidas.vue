@@ -12,7 +12,7 @@ export default {
             backgroundColor: config['primary_color'],
         }"
         class="relative flex flex-col items-center pb-36 pt-24 h-auto text-white select-none"
-        id="contact"
+        id="contato"
     >
         <h1
             class="text-3xl px-5 md:text-5xl font-bold text-center"

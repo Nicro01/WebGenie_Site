@@ -56,10 +56,15 @@ export default {
     components: {
         BaseButton,
     },
+    methods: {
+        openCase(url) {
+            window.open(url, "_blank");
+        },
+    },
 };
 </script>
 <template>
-    <section class="min-h-screen max-lg:mb-20">
+    <section class="min-h-screen max-lg:mb-20" id="cases">
         <div>
             <h1
                 class="mx-auto max-w-4xl mt-20 font-display text-center text-3xl max-lg:px-5 lg:text-5xl font-medium tracking-tight text-slate-900"
@@ -127,6 +132,7 @@ export default {
                         </div>
 
                         <BaseButton
+                            @click="openCase(`${site.url}`)"
                             :primaryColor="config['primary_color']"
                             :secondaryColor="config['secondary_color']"
                             tertiaryColor="white"

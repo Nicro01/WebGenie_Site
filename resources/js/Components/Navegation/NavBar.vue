@@ -1,5 +1,6 @@
 <script>
 import BaseButton from "@/Components/Buttons/BaseButton.vue";
+import { Link } from "@inertiajs/vue3";
 
 export default {
     data() {
@@ -7,23 +8,28 @@ export default {
             menuItems: [
                 {
                     name: "Home",
-                    link: "#",
+                    link: "#home",
                 },
                 {
                     name: "WebGenie",
-                    link: "#",
-                },
-                {
-                    name: "Cases",
-                    link: "#",
+                    link: "#webgenie",
                 },
                 {
                     name: "Soluções",
                     link: "#solucoes",
                 },
                 {
+                    name: "Diferenciais",
+                    link: "#diferenciais",
+                },
+                {
+                    name: "Cases",
+                    link: "#cases",
+                },
+
+                {
                     name: "Contato",
-                    link: "#",
+                    link: "#contato",
                 },
             ],
             hover: [false, false, false, false, false],
@@ -71,6 +77,7 @@ export default {
                     :primaryColor="config['primary_color']"
                     :secondaryColor="config['secondary_color']"
                     tertiaryColor="#333"
+                    class="max-lg:hidden"
                 />
 
                 <button
