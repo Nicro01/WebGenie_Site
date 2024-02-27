@@ -1,3 +1,21 @@
+<script>
+export default {
+    data() {
+        return {
+            isMobile: false,
+        };
+    },
+    props: {
+        config: Object,
+    },
+    computed: {
+        isMobile() {
+            return window.innerWidth < 1024;
+        },
+    },
+};
+</script>
+
 <template>
     <svg
         version="1.1"
@@ -6,7 +24,11 @@
         x="0px"
         y="0px"
         viewBox="0 0 500 500"
-        style="enable-background: new 0 0 500 500; width: 600px; height: 600px"
+        style="enable-background: new 0 0 500 500"
+        :style="{
+            width: isMobile ? '300px' : '600px',
+            height: isMobile ? '300px' : '600px',
+        }"
         xml:space="preserve"
     >
         <g id="Floor">
@@ -4033,10 +4055,3 @@
         </g>
     </svg>
 </template>
-<script>
-export default {
-    props: {
-        config: Object,
-    },
-};
-</script>

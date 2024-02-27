@@ -42,9 +42,11 @@ export default {
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
                     <div
-                        class="flex flex-col justify-end text-center lg:text-right"
+                        class="flex flex-col justify-center lg:justify-end text-center lg:text-right"
                     >
-                        <div class="flex gap-8 justify-end mb-5 items-center">
+                        <div
+                            class="flex gap-8 justify-center lg:justify-end mb-5 items-center"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="w-10"
@@ -60,7 +62,7 @@ export default {
                             </p>
                         </div>
                         <a
-                            class="font-semibold text-xl rounded-lg self-end inline-flex items-center justify-center bg-white py-4 px-20 hover:bg-opacity-90"
+                            class="font-semibold text-xl rounded-lg self-center lg:self-end inline-flex items-center justify-center bg-white py-4 px-20 hover:bg-opacity-90"
                             href="#"
                             >Agendar Agora</a
                         >

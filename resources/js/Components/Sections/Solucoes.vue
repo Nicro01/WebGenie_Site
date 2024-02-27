@@ -12,7 +12,10 @@ export default {
 </script>
 
 <template>
-    <div class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6">
+    <div
+        class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6"
+        id="solucoes"
+    >
         <div class="flex flex-col gap-10">
             <!-- can help image -->
             <div class="self-center text-center">

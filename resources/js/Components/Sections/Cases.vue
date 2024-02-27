@@ -59,10 +59,10 @@ export default {
 };
 </script>
 <template>
-    <section class="min-h-screen">
+    <section class="min-h-screen max-lg:mb-20">
         <div>
             <h1
-                class="mx-auto max-w-4xl mt-20 font-display text-center text-5xl font-medium tracking-tight text-slate-900"
+                class="mx-auto max-w-4xl mt-20 font-display text-center text-3xl max-lg:px-5 lg:text-5xl font-medium tracking-tight text-slate-900"
             >
                 <span class="inline-block"
                     >Nossos cases de
@@ -92,12 +92,12 @@ export default {
             </h1>
 
             <p
-                class="text-center mt-9 text-lg tracking-tight text-slate-700 sm:mt-6"
+                class="text-center mt-2 lg:mt-9 text-lg tracking-tight text-slate-700 sm:mt-6"
             >
                 Conheça um pouco do nosso portífolio
             </p>
         </div>
-        <div class="grid grid-cols-3 gap-5 mt-10">
+        <div class="grid grid-col-1 max-lg:px-10 lg:grid-cols-3 gap-5 mt-10">
             <div
                 class="group col-span-1"
                 v-for="(site, i) in cases"

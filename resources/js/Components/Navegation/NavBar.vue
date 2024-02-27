@@ -19,7 +19,7 @@ export default {
                 },
                 {
                     name: "Soluções",
-                    link: "#",
+                    link: "#solucoes",
                 },
                 {
                     name: "Contato",
@@ -44,7 +44,9 @@ export default {
 };
 </script>
 <template>
-    <nav class="fixed z-[999] w-full bg-white border-gray-200 py-2.5">
+    <nav
+        class="fixed z-[999] w-full bg-white border-gray-200 py-2.5 select-none"
+    >
         <div
             class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto"
         >
@@ -124,7 +126,7 @@ export default {
                                     ? config['primary_color']
                                     : `#333`,
                             }"
-                            :href="item.link"
+                            v-scroll-to="`${item.link}`"
                             class="block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0"
                             >{{ item.name }}</a
                         >

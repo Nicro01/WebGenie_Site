@@ -13,9 +13,11 @@ export default {
 };
 </script>
 <template>
-    <section class="min-h-screen flex flex-col items-center justify-center">
+    <section
+        class="min-h-screen flex flex-col max-lg:mt-20 items-center justify-center"
+    >
         <div class="flex flex-col lg:flex-row justify-between gap-10">
-            <div class="lg:w-1/2 self-start">
+            <div class="lg:w-1/2 max-lg:px-10 self-start">
                 <p
                     data-aos="fade-up"
                     class="uppercase text-sm opacity-[0.5] font-semibold mb-2"
@@ -25,7 +27,10 @@ export default {
                 >
                     Soluções personalizadas
                 </p>
-                <h2 data-aos="fade-up" class="text-4xl font-bold mb-10">
+                <h2
+                    data-aos="fade-up"
+                    class="text-2xl lg:text-4xl font-bold mb-10"
+                >
                     Oferecemos
                     <span
                         :style="{
@@ -199,11 +204,6 @@ export default {
                 </div>
             </div>
             <div data-aos="zoom-in" class="lg:w-1/2 self-center h-full">
-                <!-- <img
-                    src="https://i.postimg.cc/Dwr6WJb4/Gray-and-White-Aesthetic-Template-Computer-Mockup-Instagram-Post-4.png"
-                    alt="Hero"
-                    class="w-full h-full object-contain drop-shadow-xl"
-                /> -->
                 <Compute :config="config" />
             </div>
         </div>

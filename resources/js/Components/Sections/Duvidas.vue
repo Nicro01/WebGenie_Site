@@ -91,7 +91,7 @@ export default {
 <style>
 .custom-shape-divider-bottom-1709044869 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
