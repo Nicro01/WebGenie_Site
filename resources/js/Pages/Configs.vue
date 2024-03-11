@@ -21,6 +21,7 @@ export default {
     props: {
         configs: Object,
     },
+
     components: {
         ColorPicker,
         Accordion,
@@ -29,6 +30,9 @@ export default {
     methods: {
         submit() {
             this.$inertia.post("/store", this.form);
+        },
+        hexMask(value) {
+            return value.replace(/[^a-f0-9]/gi, "").substr(0, 6);
         },
     },
 };
@@ -59,6 +63,33 @@ export default {
                                             inputId="cp-hex"
                                             format="hex"
                                         />
+
+                                        <div class="group">
+                                            <p
+                                                class="icon my-auto absolute left-4 mt-4"
+                                            >
+                                                #
+                                            </p>
+                                            <input
+                                                :style="{
+                                                    '--color':
+                                                        '#' +
+                                                        form.primary_color +
+                                                        '66',
+                                                }"
+                                                type="text"
+                                                placeholder="ff0000"
+                                                class="input"
+                                                v-model="form.primary_color"
+                                                maxlength="6"
+                                                @input="
+                                                    form.primary_color =
+                                                        hexMask(
+                                                            $event.target.value
+                                                        )
+                                                "
+                                            />
+                                        </div>
                                     </div>
                                     <div class="flex flex-col items-center">
                                         <label
@@ -72,6 +103,33 @@ export default {
                                             inputId="cp-hex"
                                             format="hex"
                                         />
+
+                                        <div class="group">
+                                            <p
+                                                class="icon my-auto absolute left-4 mt-4"
+                                            >
+                                                #
+                                            </p>
+                                            <input
+                                                :style="{
+                                                    '--color':
+                                                        '#' +
+                                                        form.secondary_color +
+                                                        '66',
+                                                }"
+                                                type="text"
+                                                placeholder="ff0000"
+                                                class="input"
+                                                v-model="form.secondary_color"
+                                                maxlength="6"
+                                                @input="
+                                                    form.secondary_color =
+                                                        hexMask(
+                                                            $event.target.value
+                                                        )
+                                                "
+                                            />
+                                        </div>
                                     </div>
                                     <div class="flex flex-col items-center">
                                         <label
@@ -85,6 +143,33 @@ export default {
                                             inputId="cp-hex"
                                             format="hex"
                                         />
+
+                                        <div class="group">
+                                            <p
+                                                class="icon my-auto absolute left-4 mt-4"
+                                            >
+                                                #
+                                            </p>
+                                            <input
+                                                :style="{
+                                                    '--color':
+                                                        '#' +
+                                                        form.tertiary_color +
+                                                        '66',
+                                                }"
+                                                type="text"
+                                                placeholder="ff0000"
+                                                class="input"
+                                                v-model="form.tertiary_color"
+                                                maxlength="6"
+                                                @input="
+                                                    form.tertiary_color =
+                                                        hexMask(
+                                                            $event.target.value
+                                                        )
+                                                "
+                                            />
+                                        </div>
                                     </div>
                                     <div class="flex flex-col items-center">
                                         <label
@@ -98,6 +183,33 @@ export default {
                                             inputId="cp-hex"
                                             format="hex"
                                         />
+
+                                        <div class="group">
+                                            <p
+                                                class="icon my-auto absolute left-4 mt-4"
+                                            >
+                                                #
+                                            </p>
+                                            <input
+                                                :style="{
+                                                    '--color':
+                                                        '#' +
+                                                        form.quaternary_color +
+                                                        '66',
+                                                }"
+                                                type="text"
+                                                placeholder="ff0000"
+                                                class="input"
+                                                v-model="form.quaternary_color"
+                                                maxlength="6"
+                                                @input="
+                                                    form.quaternary_color =
+                                                        hexMask(
+                                                            $event.target.value
+                                                        )
+                                                "
+                                            />
+                                        </div>
                                     </div>
                                     <div class="flex flex-col items-center">
                                         <label
@@ -111,6 +223,32 @@ export default {
                                             inputId="cp-hex"
                                             format="hex"
                                         />
+                                        <div class="group">
+                                            <p
+                                                class="icon my-auto absolute left-4 mt-4"
+                                            >
+                                                #
+                                            </p>
+                                            <input
+                                                :style="{
+                                                    '--color':
+                                                        '#' +
+                                                        form.quintenary_color +
+                                                        '66',
+                                                }"
+                                                type="text"
+                                                placeholder="ff0000"
+                                                class="input"
+                                                v-model="form.quintenary_color"
+                                                maxlength="6"
+                                                @input="
+                                                    form.quintenary_color =
+                                                        hexMask(
+                                                            $event.target.value
+                                                        )
+                                                "
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 
@@ -129,8 +267,47 @@ export default {
     </div>
 </template>
 <style>
+:root {
+    --color: #ff0000;
+}
+
 .p-colorpicker-preview {
     border-radius: 5px !important;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.group {
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 200px;
+}
+
+.input {
+    margin-top: 1rem;
+    width: 100%;
+    height: 45px;
+    line-height: 30px;
+    padding: 0 0rem;
+    padding-left: 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f8fafc;
+    color: #0d0c22;
+    transition: 0.5s ease;
+}
+
+.input::placeholder {
+    color: #000 !important;
+}
+
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: var(--color);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px var(--color);
 }
 </style>
