@@ -23,12 +23,12 @@ export default {
                     link: "#diferenciais",
                 },
                 {
-                    name: "Depoimentos",
-                    link: "#depoimentos",
-                },
-                {
                     name: "Cases",
                     link: "#cases",
+                },
+                {
+                    name: "Depoimentos",
+                    link: "#depoimentos",
                 },
                 {
                     name: "Contato",
@@ -77,7 +77,7 @@ export default {
                 </div>
 
                 <BaseButton
-                    text="Entrar em Contato"
+                    text="Já sou Parceiro"
                     :primaryColor="config['primary_color']"
                     :secondaryColor="config['secondary_color']"
                     tertiaryColor="#333"

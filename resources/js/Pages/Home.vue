@@ -7,6 +7,7 @@ import Diferenciais from "@/Components/Sections/Diferenciais.vue";
 import Cases from "@/Components/Sections/Cases.vue";
 import Duvidas from "@/Components/Sections/Duvidas.vue";
 import SobreNos from "@/Components/Sections/SobreNos.vue";
+import Depoimentos from "@/Components/Sections/Depoimentos.vue";
 
 import Footer from "@/Components/Sections/Footer.vue";
 
@@ -26,6 +27,7 @@ export default {
         Duvidas,
         Footer,
         SobreNos,
+        Depoimentos,
     },
     mounted() {
         initFlowbite();
@@ -47,11 +49,12 @@ export default {
             <div class="min-h-[50vh]">
                 <CTA :config="config" />
             </div>
-
+            
             
             <div class="max-w-5xl mx-auto">
                 <Diferenciais :config="config" />
                 <Cases :config="config" />
+                <Depoimentos :config="config" />
             </div>
 
             <div class="lg:mt-32">

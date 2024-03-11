@@ -1,3 +1,42 @@
+<script>
+    export default {
+        data() {
+            return {
+                menuItems: [
+                    {
+                        name: "Home",
+                        link: "#home",
+                    },
+                    {
+                        name: "Soluções",
+                        link: "#solucoes",
+                    },
+                    {
+                        name: "WebGenie",
+                        link: "#webgenie",
+                    },
+                    {
+                        name: "Diferenciais",
+                        link: "#diferenciais",
+                    },
+                    {
+                        name: "Cases",
+                        link: "#cases",
+                    },
+                    {
+                        name: "Depoimentos",
+                        link: "#depoimentos",
+                    },
+                    {
+                        name: "Contato",
+                        link: "#contato",
+                    },
+                ],
+            };
+        },
+    }
+</script>
+
 <template>
     <footer class="bg-white">
         <div class="container px-4 mx-auto">
@@ -14,7 +53,16 @@
                     >
                 </a>
                 <div class="flex flex-wrap justify-center -mx-3 lg:-mx-6">
-                    <div class="w-full md:w-auto p-3 md:px-6">
+
+                    <div v-for="(item, i) in menuItems" :key="i" class="cursor-pointer w-full md:w-auto p-3 md:px-6">
+                        <a
+                            v-scroll-to="`${item.link}`"
+                            class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium"
+                            >{{ item.name }}</a
+                        >
+                    </div>
+
+                    <!-- <div class="w-full md:w-auto p-3 md:px-6">
                         <a
                             href="/terms"
                             class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium"
@@ -48,7 +96,7 @@
                             class="inline-block text-lg text-gray-500 hover:text-gray-600 font-medium"
                             >Contato</a
                         >
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
