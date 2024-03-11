@@ -45,11 +45,19 @@ export default {
           border-[1px] hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out
           ">
             <div class="h-full flex flex-col justify-center space-y-4">
-              <img class="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/second_user.webp" alt="user avatar" height="220" width="220" loading="lazy">
-              <p class="text-gray-600 md:text-xl"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
+              <img class="w-20 h-20 mx-auto rounded-full" src="https://i.ibb.co/KbGnnGM/jessica.png" alt="user avatar" height="220" width="220" loading="lazy">
+              <p class="text-gray-600 md:text-xl"> <span class="font-serif">"</span> Oi equipe da WebGenie,
+                <br><br>
+
+                Só queria dizer um enorme obrigada pelo trabalho incrível que vocês fizeram no lancamento do meu site. Vocês não só o criaram super rápido, como também captaram exatamente o que eu queria, fazendo todas as mudanças necessárias sem problema algum.
+                <br><br>
+                Fiquei impressionada com o suporte que me deram durante todo o processo. Sempre estiveram disponíveis para responder minhas perguntas e resolver quaisquer problemas que surgiram.
+                Estou muito feliz com o resultado final e agradeço muito por toda a ajuda e apoio que vocês me deram.
+                <br><br>
+                Muito obrigada! <span class="font-serif">"</span></p>
               <div>
-                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
-                  <span class="text-xs text-gray-500">Product Designer</span>
+                  <h6 class="text-lg font-semibold leading-none">Jessica Magalhaes</h6>
+                  <span class="text-xs text-gray-500">CTA</span>
               </div>
             </div>
           </div>
@@ -57,24 +65,34 @@ export default {
           <div class="p-6 rounded-xl sm:flex sm:space-x-8 sm:p-8
           border-[1px] hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out
           ">
-            <img class="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/first_user.webp" alt="user avatar" height="220" width="220" loading="lazy">
+            <img class="w-20 h-20 mx-auto rounded-full" src="https://i.ibb.co/NSMGw7c/kodama.png" alt="user avatar" height="220" width="220" loading="lazy">
             <div class="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
-              <p class="text-gray-600"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
+              <p class="text-gray-600"> <span class="font-serif">"</span> Muito satisfeito com a WebGenie, que fez o nosso site. Geralmente temos problemas de atrasos nos casos de prestação de serviços mas eles superaram as expectativas e entregaram antes da data acordada.
+              <br> 
+              <br> 
+              Muita profundidade ao escolherem as paletas de cores, fontes e estrutura do site para gerar mais credibilidade para quem navegar.
+              <br>
+              <br>
+              Muito satisfeito!
+                 <span class="font-serif">"</span></p>
               <div>
-                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
-                  <span class="text-xs text-gray-500">Product Designer</span>
+                  <h6 class="text-lg font-semibold leading-none">Vagner Kodama</h6>
+                  <span class="text-xs text-gray-500">Kodama</span>
               </div>
             </div>
           </div>
           <div class="p-6 rounded-xl sm:flex sm:space-x-8 sm:p-8
           border-[1px] hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out
           ">
-            <img class="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/third_user.webp" alt="user avatar" height="220" width="220" loading="lazy">
+            <img class="w-20 h-20 mx-auto rounded-full" src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/second_user.webp" alt="user avatar" height="220" width="220" loading="lazy">
             <div class="space-y-4 mt-4 text-center sm:mt-0 sm:text-left">
-              <p class="text-gray-600"> <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti repudiandae ad doloribus. <span class="font-serif">"</span></p>
+              <p class="text-gray-600"> <span class="font-serif">"</span> Equipe WEBGENIE, nem sei como agradecer! Quando resolvi iniciar meu empreendimento fiquei completamente perdida em como faria um site, não tinha noção alguma de tecnologias rsrs, fico muito contente de ter descoberto vocês e mais ainda pelo amparo e serviço INCRÍVEL que vocês me prestaram. Amei TUDO! Queria que todos os iniciantes em negócios tivessem a oportunidade de ter um site feito por vocês, realmente magnífico. 
+                <br><br>
+                Ótimo trabalho! Agradecida. 
+                <span class="font-serif">"</span></p>
               <div>
-                  <h6 class="text-lg font-semibold leading-none">Jane Doe</h6>
-                  <span class="text-xs text-gray-500">Product Designer</span>
+                  <h6 class="text-lg font-semibold leading-none">Luana Aguiar</h6>
+                  <span class="text-xs text-gray-500">Venir</span>
               </div>
             </div>
           </div>
