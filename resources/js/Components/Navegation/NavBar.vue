@@ -11,22 +11,25 @@ export default {
                     link: "#home",
                 },
                 {
-                    name: "WebGenie",
-                    link: "#webgenie",
-                },
-                {
                     name: "Soluções",
                     link: "#solucoes",
+                },
+                {
+                    name: "WebGenie",
+                    link: "#webgenie",
                 },
                 {
                     name: "Diferenciais",
                     link: "#diferenciais",
                 },
                 {
+                    name: "Depoimentos",
+                    link: "#depoimentos",
+                },
+                {
                     name: "Cases",
                     link: "#cases",
                 },
-
                 {
                     name: "Contato",
                     link: "#contato",
@@ -34,6 +37,7 @@ export default {
             ],
             hover: [false, false, false, false, false],
             isMobile: false,
+            isMenuOpen: false,
         };
     },
     props: {
@@ -81,11 +85,12 @@ export default {
                 />
 
                 <button
+                    @click="isMenuOpen = !isMenuOpen"
                     data-collapse-toggle="mobile-menu-2"
                     type="button"
                     class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="mobile-menu-2"
-                    aria-expanded="true"
+                    :aria-expanded="isMenuOpen.toString()"
                 >
                     <span class="sr-only">Open main menu</span>
                     <svg
@@ -115,6 +120,7 @@ export default {
                 </button>
             </div>
             <div
+                :class="{'block': isMenuOpen, 'hidden': !isMenuOpen}"
                 class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1"
                 id="mobile-menu-2"
             >

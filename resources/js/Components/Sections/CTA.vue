@@ -17,13 +17,13 @@ export default {
             backgroundColor: config['primary_color'],
         }"
         data-aos="fade-up"
-        class="relative z-10 overflow-hidden py-16 px-8 mt-40"
+        class="relative z-10 overflow-hidden py-16 px-8 mt-20 mb-28"
     >
         <div class="container">
             <div class="-mx-4 flex flex-wrap items-center">
                 <div class="w-full px-4 lg:w-1/2">
                     <div class="text-center lg:text-left">
-                        <div class="mb-10 lg:mb-0">
+                        <div class="mb-10 ">
                             <h1
                                 class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white"
                             >
@@ -58,7 +58,7 @@ export default {
                                 />
                             </svg>
                             <p class="text-white font-bold text-3xl">
-                                043 9 8811 7085
+                                085 9 9266 3939
                             </p>
                         </div>
                         <a

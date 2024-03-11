@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('configs', function (Blueprint $table) {
             $table->id();
-            $table->string('primary_color');
+            $table->string('primary_color')->default("0000dd");
             $table->string('secondary_color')->nullable();
             $table->string('tertiary_color')->nullable();
             $table->string('quaternary_color')->nullable();
