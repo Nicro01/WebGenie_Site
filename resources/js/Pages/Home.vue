@@ -8,6 +8,7 @@ import Cases from "@/Components/Sections/Cases.vue";
 import Duvidas from "@/Components/Sections/Duvidas.vue";
 import SobreNos from "@/Components/Sections/SobreNos.vue";
 import Depoimentos from "@/Components/Sections/Depoimentos.vue";
+import Indicacao from "@/Components/Sections/Indicacao.vue";
 
 import Footer from "@/Components/Sections/Footer.vue";
 
@@ -28,6 +29,7 @@ export default {
         Footer,
         SobreNos,
         Depoimentos,
+        Indicacao,
     },
     mounted() {
         initFlowbite();
@@ -48,6 +50,7 @@ export default {
 
             <div class="min-h-[50vh]">
                 <CTA :config="config" />
+                <Indicacao :config="config" />
             </div>
             
             
