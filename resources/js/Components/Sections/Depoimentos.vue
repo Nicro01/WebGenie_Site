@@ -9,7 +9,7 @@ export default {
 <template>
     <!-- component -->
 <div id="depoimentos" :style="{
-}" class="py-16 white w-full">  
+}" class="pb-16 white w-full">  
     <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <h1
             class="mb-20 mx-auto max-w-4xl mt-20 font-display text-center text-3xl max-lg:px-5 lg:text-5xl font-medium tracking-tight text-slate-900"

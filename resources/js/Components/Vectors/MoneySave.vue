@@ -7,6 +7,7 @@ export default {
     },
     props: {
         config: Object,
+        size: String,
     },
     computed: {
         isMobile() {

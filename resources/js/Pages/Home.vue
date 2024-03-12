@@ -50,16 +50,22 @@ export default {
 
             <div class="min-h-[50vh]">
                 <CTA :config="config" />
-                <Indicacao :config="config" />
             </div>
             
             
             <div class="max-w-5xl mx-auto">
                 <Diferenciais :config="config" />
                 <Cases :config="config" />
-                <Depoimentos :config="config" />
+            </div>
+            
+            <div class="pt-12">
+                <Indicacao :config="config" />
             </div>
 
+            <div class="max-w-5xl mx-auto">
+                <Depoimentos :config="config" />
+            </div>
+            
             <div class="lg:mt-32">
                 <Duvidas :config="config" />
             </div>
