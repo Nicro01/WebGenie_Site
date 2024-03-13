@@ -45,7 +45,7 @@ export default {
                 </div>
                 <div class="w-full px-4 relative lg:w-1/2">
                     <div
-                        class="max-sm:hidden flex flex-col bottom-[-325px] absolute justify-center lg:justify-end text-center lg:text-right"
+                        class="max-sm:hidden flex flex-col bottom-[-325px] -right-[5%] absolute justify-center lg:justify-end text-center lg:text-right"
                     >
                         <MoneySave :config="config"/>
                     </div>

@@ -63,7 +63,7 @@ export default {
                         </div>
                         <a
                             class="font-semibold text-xl rounded-lg self-center lg:self-end inline-flex items-center justify-center bg-white py-4 px-20 hover:bg-opacity-90"
-                            href="#"
+                            href="https://wa.me/558592663939?text=Quero+agendar+uma+consulta+com+a+WebGenie!"
                             >Agendar Agora</a
                         >
                     </div>

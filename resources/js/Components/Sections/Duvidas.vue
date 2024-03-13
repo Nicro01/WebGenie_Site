@@ -1,12 +1,49 @@
 <script>
+import FlashMessage from '../Flash/FlashMessage.vue';
+import { FrontSide } from 'three';
+
 export default {
+    data () {
+        return {
+            form: {
+                name: '',
+                email: '',
+            },
+            flashMessage: '',
+            messageType: '',
+        }
+    },
+    methods: {
+        async sendEmail() {
+            console.log("teste")
+            try {
+                let response = await axios.post('/sendemail', this.form);
+                this.showFlashMessage('Email enviado com sucesso!', 'success');
+
+            } catch (error) {
+                console.error(error);
+                this.showFlashMessage('Erro ao enviar email', 'error');
+            }
+        },
+        showFlashMessage(message, type) {
+            console.log("MOSTRANDO")
+            this.flashMessage = message;
+            this.messageType = type; // 'success' ou 'error'
+            this.$refs.flashMessage.show();
+        }
+    },
     props: {
         config: Object,
+    },
+    components: {
+        FlashMessage
     },
 };
 </script>
 
 <template>
+    <FlashMessage ref="flashMessage" :message="flashMessage" :type="messageType"/>
+
     <div
         :style="{
             backgroundColor: config['primary_color'],
@@ -30,13 +67,14 @@ export default {
                 realidade. Entre em contato conosco e vamos conversar sobre o
                 seu projeto.
             </p>
-            <form action="#" class="space-y-8">
+            <form @submit.prevent="sendEmail" class="space-y-8">
                 <div class="grid md:grid-cols-4 items-center gap-5">
                     <div class="col-span-2 md:col-span-1">
                         <input
                             type="text"
+                            v-model="form.name"
                             id="subject"
-                            class="block w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
+                            class="block text-black w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
                             placeholder="Seu Nome"
                             data-aos="zoom-in"
                             required
@@ -45,15 +83,16 @@ export default {
                     <div class="col-span-2">
                         <input
                             type="email"
+                            v-model="form.email"
                             id="email"
-                            class="shadow-sm bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
+                            class="shadow-sm text-black bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full"
                             placeholder="nome@webgenie.com.br"
                             data-aos="zoom-in"
                             required
                         />
                     </div>
                     <button
-                        type="button"
+                        type="submit"
                         class="col-span-2 md:col-span-1 py-2 inline-block rounded border-2 border-neutral-50 px-6 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
                         data-aos="zoom-in"
                     >

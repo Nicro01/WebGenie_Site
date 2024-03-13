@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\IndexController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -25,13 +26,17 @@ Route::get('/', function () {
 
 Route::get('/', [IndexController::class, 'index'])->name('home');
 
+Route::get('/test', function () {
+    return view('emails.notification', ['details' => ["name" => "tester"]]);
+});
+
 Route::get('/config', [IndexController::class, 'create'])->name('create');
 
 Route::post('/store', [IndexController::class, 'store'])->name('store');
 
 Route::get('/edit/{id}', [IndexController::class, 'edit'])->name('edit');
 
-
+Route::post('/sendemail', [EmailController::class, 'sendEmail']);
 
 Route::middleware([
     'auth:sanctum',

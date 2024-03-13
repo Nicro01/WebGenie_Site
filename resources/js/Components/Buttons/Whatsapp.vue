@@ -1,6 +1,6 @@
 <template>
     <a
-        href="https://wa.me/5543988117085?text=Vim+pelo+site+da+WebGenie%2C+gostaria+de+realizar+meu+sonho+%3A%29"
+        href="https://wa.me/558592663939?text=Vim+pelo+site+da+WebGenie%2C+gostaria+de+realizar+meu+sonho+%3A%29"
         data-te-ripple-init
         data-te-ripple-color="light"
         class="mb-2 fixed z-[999] bottom-5 right-5 animate-bounce inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"

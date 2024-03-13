@@ -12,6 +12,8 @@ import Indicacao from "@/Components/Sections/Indicacao.vue";
 
 import Footer from "@/Components/Sections/Footer.vue";
 
+import FlashMessage from '@/Components/Flash/FlashMessage.vue';
+
 import { initFlowbite } from "flowbite";
 
 export default {
@@ -30,6 +32,20 @@ export default {
         SobreNos,
         Depoimentos,
         Indicacao,
+        FlashMessage,
+    },
+    data() {
+        return {
+            flashMessage: '',
+            messageType: '',
+        };
+    },
+    methods: {
+        showFlashMessage(message, type) {
+            this.flashMessage = message;
+            this.messageType = type; // 'success' ou 'error'
+            this.$refs.flashMessage.show();
+        }
     },
     mounted() {
         initFlowbite();
@@ -38,6 +54,7 @@ export default {
 </script>
 <template>
     <AppLayout :config="config" title="Home">
+
         <div class="h-screen select-none">
             <div class="max-w-5xl mx-auto">
                 <HeroSection :config="config" />
@@ -71,7 +88,7 @@ export default {
             </div>
 
 
-            <Footer />
+            <Footer :config="config"/>
         </div>
     </AppLayout>
 </template>

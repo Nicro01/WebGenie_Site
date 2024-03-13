@@ -62,12 +62,13 @@ export default {
         >
             <a href="#" class="flex items-center">
                 <img
-                    src="https://i.postimg.cc/LskqD67R/Web-Genie-Logo.png"
+                    src="https://i.postimg.cc/VspJLRNn/Logo.png"
                     class="h-9 mr-3 sm:h-12"
-                    alt="Landwind Logo"
+                    alt="WebGenie Logo"
                 />
                 <span
                     class="self-center text-xl font-semibold whitespace-nowrap"
+                    :style="{ color: config['primary_color'] }"
                     >WebGenie</span
                 >
             </a>
@@ -140,7 +141,7 @@ export default {
                                     : `#333`,
                             }"
                             v-scroll-to="`${item.link}`"
-                            class="block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0"
+                            class="hover:cursor-pointer block py-2 pl-3 pr-4 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0"
                             >{{ item.name }}</a
                         >
                     </li>
