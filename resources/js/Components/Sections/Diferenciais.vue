@@ -84,7 +84,7 @@ export default {
                 <div class="flex flex-col gap-5">
                     <div data-aos="fade-up">
                         <div
-                            class="flex items-center justify-start rounded-lg p-2 hover:border-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
+                            class="flex border-2 border-black border-t-0 border-l-0 rounded-br-xl items-center justify-start p-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
                         >
                             <div
                                 class="flex items-center justify-center rounded-full text-white text-center"
@@ -107,15 +107,15 @@ export default {
                                     Design personalizado
                                 </h3>
                                 <p>
-                                    Nossos sites são feitos sob medida para o
-                                    seu negócio.
+                                    Criamos sites que refletem sua marca, com
+                                    design único que encanta e engaja visitantes
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div data-aos="fade-up">
                         <div
-                            class="flex items-center justify-start rounded-lg p-2 hover:border-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
+                            class="flex border-black border-2 border-t-0 border-l-0 rounded-br-xl items-center justify-start p-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
                         >
                             <div
                                 class="flex items-center justify-start rounded-full text-white text-center"
@@ -136,15 +136,16 @@ export default {
                             <div class="ml-4">
                                 <h3 class="text-2xl font-bold">SEO</h3>
                                 <p>
-                                    Nossos sites são feitos sob medida para o
-                                    seu negócio.
+                                    Elevamos sua presença online com estratégias
+                                    de SEO que melhoram sua visibilidade e
+                                    atraem mais clientes.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div data-aos="fade-up">
                         <div
-                            class="flex items-center justify-start rounded-lg p-2 hover:border-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
+                            class="flex border-black border-2 border-t-0 border-l-0 rounded-br-xl items-center justify-start p-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
                         >
                             <div
                                 class="flex items-center justify-start rounded-full text-white text-center"
@@ -165,15 +166,16 @@ export default {
                             <div class="ml-4">
                                 <h3 class="text-2xl font-bold">Performance</h3>
                                 <p>
-                                    Nossos sites são feitos sob medida para o
-                                    seu negócio.
+                                    Nossos sites carregam rápido e funcionam
+                                    perfeitamente, garantindo a melhor
+                                    experiência para o usuário.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div data-aos="fade-up">
                         <div
-                            class="flex items-center justify-start rounded-lg p-2 hover:border-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
+                            class="flex border-black border-2 border-t-0 border-l-0 rounded-br-xl items-center justify-start p-2 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
                         >
                             <div
                                 class="flex items-center justify-start rounded-full text-white text-center"
@@ -196,8 +198,9 @@ export default {
                                     Integração com redes sociais
                                 </h3>
                                 <p>
-                                    Nossos sites são feitos sob medida para o
-                                    seu negócio.
+                                    Conectamos seu site às redes sociais,
+                                    ampliando seu alcance e facilitando o
+                                    engajamento do público.
                                 </p>
                             </div>
                         </div>

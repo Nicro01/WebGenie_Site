@@ -23,7 +23,7 @@ export default {
             <div class="-mx-4 flex flex-wrap items-center">
                 <div class="w-full px-4 lg:w-1/2">
                     <div class="text-center lg:text-left">
-                        <div class="mb-10 ">
+                        <div class="mb-10">
                             <h1
                                 class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight text-white"
                             >
@@ -62,7 +62,7 @@ export default {
                             </p>
                         </div>
                         <a
-                            class="font-semibold text-xl rounded-lg self-center lg:self-end inline-flex items-center justify-center bg-white py-4 px-20 hover:bg-opacity-90"
+                            class="font-semibold text-xl rounded-lg self-center lg:self-end inline-flex items-center justify-center bg-white py-4 px-20 border-2 border-black border-t-0 border-l-0 hover:-translate-x-2 hover:-translate-y-2 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
                             href="https://wa.me/558592663939?text=Quero+agendar+uma+consulta+com+a+WebGenie!"
                             >Agendar Agora</a
                         >

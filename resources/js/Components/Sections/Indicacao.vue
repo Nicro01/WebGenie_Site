@@ -25,25 +25,28 @@ export default {
             <div class="-mx-4 flex flex-wrap items-center">
                 <div class="w-full px-4 lg:w-1/2">
                     <div class="text-center lg:text-left">
-                        <div class="">
+                        <div>
                             <h1
-                                class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight"
+                                class="mt-0 text-2xl font-bold leading-tight sm:mb-6 sm:text-3xl sm:leading-snug md:text-4xl md:leading-tight"
                             >
-                                Premiações por indicação!<br />Ganhe até
-                                R$400,00 por indicação.
+                                Premiações por Indicação: Ganhe até R$400 por
+                                Cada Amigo Indicado!
                             </h1>
                             <p
-                                class="w-full mb-3 text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed"
+                                class="w-full mt-5 mb-8 font-medium leading-relaxed sm:mb-5 sm:text-base sm:leading-relaxed md:text-lg md:leading-relaxed"
                             >
-                                Quer ganhar uma rende extra e ainda nos
-                                ajudar?<br />Faça uma indicação para a gente e
-                                receba de R$200.00 até R$400.00 !
+                                Quer uma forma de ganhar dinheiro extra enquanto
+                                ajuda a nossa comunidade a crescer? É simples:
+                                faça uma indicação e você pode receber entre
+                                R$200 e R$400 por cada pessoa que se juntar a
+                                nós por sua recomendação!
                             </p>
                             <a
-                                class="font-semibold text-xl rounded-lg self-center lg:self-end inline-flex items-center justify-center bg-white py-4 px-20 hover:bg-opacity-90"
                                 href="#"
-                                >Realizar Desejo</a
+                                class="font-semibold text-lg rounded-lg self-center lg:self-start inline-flex items-center justify-center bg-white py-2 px-10 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_rgba(0,_0,_0,_0.4),_10px_10px_rgba(0,_0,_0,_0.3),_15px_15px_rgba(0,_0,_0,_0.2),_20px_20px_rgba(0,_0,_0,_0.1),_25px_25px_rgba(0,_0,_0,_0.05)] transform transition-all duration-300 ease-in-out"
                             >
+                                Conquiste Seus Desejos
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -8,16 +8,21 @@ export default {
                 name: "",
                 email: "",
             },
-            flashMessage: "",
+            flashMessage: "0",
             messageType: "",
+            sendButton: "Enviar",
         };
     },
     methods: {
         async sendEmail() {
+            this.sendButton = "";
             console.log("teste");
             try {
                 let response = await axios.post("/sendemail", this.form);
                 this.showFlashMessage("Email enviado com sucesso!", "success");
+                this.form.name = "";
+                this.form.email = "";
+                this.sendButton = "Enviar";
             } catch (error) {
                 console.error(error);
                 this.showFlashMessage("Erro ao enviar email", "error");
@@ -98,7 +103,14 @@ export default {
                         class="col-span-2 md:col-span-1 py-2 inline-block rounded border-2 border-neutral-50 px-6 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
                         data-aos="zoom-in"
                     >
-                        Enviar
+                        <span v-if="sendButton === ''"
+                            ><div class="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div></div
+                        ></span>
+                        <span v-else>Enviar</span>
                     </button>
                 </div>
             </form>
@@ -149,5 +161,41 @@ export default {
 
 .custom-shape-divider-bottom-1709044869 .shape-fill {
     fill: #ffffff;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 </style>

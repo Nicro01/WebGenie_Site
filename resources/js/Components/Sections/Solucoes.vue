@@ -69,10 +69,11 @@ export default {
                             WebSites
                         </h3>
                         <p class="text-base">
-                            Nossos websites são projetados para serem
-                            visualmente atraentes, fáceis de navegar e
-                            otimizados para SEO, garantindo que você se destaque
-                            na web.
+                            Nossos websites combinam design exclusivo com
+                            usabilidade superior, garantindo que sua marca
+                            capture a atenção e facilite a jornada do usuário.
+                            Com foco em SEO e pergormance, posicionamos você à
+                            frente na web.
                         </p>
                     </div>
                 </div>
@@ -82,10 +83,11 @@ export default {
                     >
                         <h3 class="text-2xl font-bold text-md mb-6">WebApps</h3>
                         <p class="text-base">
-                            Nossos aplicativos web são projetados para serem
-                            visualmente atraentes, fáceis de navegar e
-                            otimizados para SEO, garantindo que você se destaque
-                            na web.
+                            Desenvolvemos WebApps interativos e de alta
+                            performance, focados em proporcionar experiências
+                            ricas e envolventes. Sua aplicação será intuitiva,
+                            rápida e otimizada para alcançar as melhores
+                            posições em buscadores.
                         </p>
                     </div>
                 </div>
@@ -97,10 +99,11 @@ export default {
                             Sistemas
                         </h3>
                         <p class="text-base">
-                            Nossos sistemas são projetados para serem
-                            visualmente atraentes, fáceis de navegar e
-                            otimizados para SEO, garantindo que você se destaque
-                            na web.
+                            Criamos sistemas robustos e confiáveis, projetados
+                            para melhorar a eficiência operacional. Com
+                            interfaces amigáveis e navegação intuitiva, eles são
+                            também refinados para um excelente desempenho em
+                            perfoamance com base nas métricas do Google.
                         </p>
                     </div>
                 </div>
@@ -110,14 +113,20 @@ export default {
                     >
                         <h3 class="text-2xl font-bold text-md mb-6">APIs</h3>
                         <p class="text-base">
-                            Nossas APIs são projetadas para serem visualmente
-                            atraentes, fáceis de navegar e otimizadas para SEO,
-                            garantindo que você se destaque na web.
+                            Nossas APIs são desenvolvidas para facilitar a
+                            integração e a expansão dos seus sistemas. Com
+                            documentação clara e práticas de design focadas na
+                            usabilidade, elas impulsionam a conectividade e o
+                            desempenho do seu ecossistema digital.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="self-center" v-scroll-to="'#webgenie'" data-aos="fade-up">
+            <div
+                class="self-center"
+                v-scroll-to="'#webgenie'"
+                data-aos="fade-up"
+            >
                 <BaseButton
                     :primaryColor="config['primary_color']"
                     :secondaryColor="config['secondary_color']"
