@@ -14,7 +14,7 @@ export default {
 </script>
 <template>
     <section
-        class="min-h-screen flex flex-col max-lg:mt-20 items-center justify-center"
+        class="py-8 min-h-screen flex flex-col max-lg:mt-20 items-center justify-center"
         id="diferenciais"
     >
         <div class="flex flex-col lg:flex-row justify-between gap-10">

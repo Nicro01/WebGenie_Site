@@ -64,7 +64,7 @@ export default {
 };
 </script>
 <template>
-    <section class="min-h-screen max-lg:mb-20" id="cases">
+    <section class="pb-8 min-h-screen max-lg:mb-20" id="cases">
         <div>
             <h1
                 class="mx-auto max-w-4xl mt-20 font-display text-center text-3xl max-lg:px-5 lg:text-5xl font-medium tracking-tight text-slate-900"

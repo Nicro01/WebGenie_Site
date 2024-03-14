@@ -47,12 +47,14 @@ export default {
                 <p data-aos="fade-up" class="mb-4">Estamos comprometidos em oferecer excelência em tudo o que fazemos, do atendimento ao cliente ao desenvolvimento de projetos únicos e personalizáveis. Entre em contato conosco para realizar seu desejo e levar seu negócio
                 para o <span class="font-black" :style="{ color: config['primary_color'] }">próximo nível</span>.</p>
                 <div class="self-center mt-6" data-aos="fade-up">
+                    <a href="https://wa.me/558592663939?text=Realize+meu+desejo!">
                     <BaseButton
                         :primaryColor="config['primary_color']"
                         :secondaryColor="config['secondary_color']"
                         tertiaryColor="#333"
                         text="Quero Realizar meu Desejo"
                     />
+                    </a>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4 mt-8">

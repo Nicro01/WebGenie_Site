@@ -27,6 +27,7 @@ createInertiaApp({
             .use(VueScrollTo, {
                 duration: 500,
                 easing: "ease",
+                offset: 0
             })
             .use(ZiggyVue)
             .mount(el);

@@ -18,7 +18,7 @@ class EmailController extends Controller
         ];
 
         
-        Mail::to($request->email)->send(new EmailNotification($details));
+        Mail::to($request->email)->cc('contato@webgenie.com.br')->send(new EmailNotification($details));
 
         // TODO: Fazer flash
         return response()->json(['message' => 'Email enviado com sucesso!'], 200);

@@ -54,14 +54,16 @@ export default {
         @mouseover="hover = true"
         @mouseout="hover = false"
     >
-        <span
+        
+        <a href="https://wa.me/558592663939?text=Realize+meu+desejo!"><span
             :style="{
                 color: hover ? 'white' : '#333',
             }"
             >{{ text }}</span
-        >
+        ></a>
     </button>
     <button
+        v-scroll-to="'#solucoes'"
         :class="[
             'w-auto',
             'px-5',

@@ -75,7 +75,7 @@ export default {
                 <Cases :config="config" />
             </div>
             
-            <div class="pt-12">
+            <div class="">
                 <Indicacao :config="config" />
             </div>
 

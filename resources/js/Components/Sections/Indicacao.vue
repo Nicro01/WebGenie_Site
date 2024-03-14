@@ -19,7 +19,7 @@ export default {
             color: config['primary_color'],
         }"
         data-aos="fade-up"
-        class="bg-[#ECDAB7] relative z-10 overflow-hidden py-16 px-8 mt-20 mb-28"
+        class="bg-[#ECDAB7] relative z-10 overflow-hidden py-16 px-8  mb-28"
     >
         <div class="container">
             <div class="-mx-4 flex flex-wrap items-center">
@@ -29,11 +29,10 @@ export default {
                             <h1
                                 class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight "
                             >
-                                Veio por indicação?<br> Ganhe Desconto
+                                Premiações por indicação!<br>Ganhe até R$400,00 por indicação.
                             </h1>
                             <p class="w-full mb-3 text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed">
-                                Nossos parceiros indicam, nós damos desconto!<br>
-                                Se você conheceu a webgenie por meio de alguém, ganhe até 20% de desconto no seu produto!
+                                Quer ganhar uma rende extra e ainda nos ajudar?<br>Faça uma indicação para a gente e receba de R$200.00 até R$400.00 !
                             </p>
                             <a
                                 class="font-semibold text-xl rounded-lg self-center lg:self-end inline-flex items-center justify-center bg-white py-4 px-20 hover:bg-opacity-90"

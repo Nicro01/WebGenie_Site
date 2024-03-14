@@ -12,7 +12,7 @@ export default {
 }" class="pb-16 white w-full">  
     <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <h1
-            class="mb-20 mx-auto max-w-4xl mt-20 font-display text-center text-3xl max-lg:px-5 lg:text-5xl font-medium tracking-tight text-slate-900"
+            class="mb-[6rem] mx-auto max-w-4xl mt-20 font-display text-center text-3xl max-lg:px-5 lg:text-5xl font-medium tracking-tight text-slate-900"
         >
             <span class="inline-block"
                 >O que

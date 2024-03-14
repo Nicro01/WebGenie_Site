@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div
-        class="max-w-screen-xl mx-auto py-8 px-4 lg:py-16 lg:px-6"
+        class="max-w-screen-xl mx-auto my-auto py-8 px-4 lg:py-16 lg:px-6"
         id="solucoes"
     >
         <div class="flex flex-col gap-10">
@@ -22,7 +22,7 @@ export default {
                 <div class="mb-10 text-center">
                     <h2
                         data-aos="fade-up"
-                        class="text-5xl tracking-tight text-center font-bold text-primary-800"
+                        class="lg:pt-10 text-5xl tracking-tight text-center font-bold text-primary-800"
                     >
                         Nossas
                         <span class="inline-block">
@@ -117,7 +117,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="self-center" data-aos="fade-up">
+            <div class="self-center" v-scroll-to="'#webgenie'" data-aos="fade-up">
                 <BaseButton
                     :primaryColor="config['primary_color']"
                     :secondaryColor="config['secondary_color']"
