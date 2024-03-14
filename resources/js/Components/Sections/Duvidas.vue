@@ -1,48 +1,50 @@
 <script>
-import FlashMessage from '../Flash/FlashMessage.vue';
-import { FrontSide } from 'three';
+import FlashMessage from "../Flash/FlashMessage.vue";
 
 export default {
-    data () {
+    data() {
         return {
             form: {
-                name: '',
-                email: '',
+                name: "",
+                email: "",
             },
-            flashMessage: '',
-            messageType: '',
-        }
+            flashMessage: "",
+            messageType: "",
+        };
     },
     methods: {
         async sendEmail() {
-            console.log("teste")
+            console.log("teste");
             try {
-                let response = await axios.post('/sendemail', this.form);
-                this.showFlashMessage('Email enviado com sucesso!', 'success');
-
+                let response = await axios.post("/sendemail", this.form);
+                this.showFlashMessage("Email enviado com sucesso!", "success");
             } catch (error) {
                 console.error(error);
-                this.showFlashMessage('Erro ao enviar email', 'error');
+                this.showFlashMessage("Erro ao enviar email", "error");
             }
         },
         showFlashMessage(message, type) {
-            console.log("MOSTRANDO")
+            console.log("MOSTRANDO");
             this.flashMessage = message;
             this.messageType = type; // 'success' ou 'error'
             this.$refs.flashMessage.show();
-        }
+        },
     },
     props: {
         config: Object,
     },
     components: {
-        FlashMessage
+        FlashMessage,
     },
 };
 </script>
 
 <template>
-    <FlashMessage ref="flashMessage" :message="flashMessage" :type="messageType"/>
+    <FlashMessage
+        ref="flashMessage"
+        :message="flashMessage"
+        :type="messageType"
+    />
 
     <div
         :style="{

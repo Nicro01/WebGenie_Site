@@ -1,13 +1,15 @@
 <script>
 import DualButtons from "@/Components/Buttons/DualButtons.vue";
 
-// define "lord-icon" custom element with default properties
-
 export default {
     data() {
         return {
             title: ["WebSite", "E-commerce", "API", "Sistema", "Blog"],
-            currentTitle: "WebSite",
+            currentTitle: "",
+            currentTitleIndex: 0,
+            currentCharIndex: 0,
+            typingSpeed: 150,
+            delayBetweenTitles: 2500,
         };
     },
     props: {
@@ -16,16 +18,54 @@ export default {
     components: {
         DualButtons,
     },
+
     mounted() {
-        let i = 0;
-        let title = this.title;
-        setInterval(() => {
-            i = i < title.length - 1 ? i + 1 : 0;
-            this.currentTitle = title[i];
-        }, 2000);
+        this.typeTitle();
+    },
+    methods: {
+        async typeTitle() {
+            if (
+                this.currentCharIndex <
+                this.title[this.currentTitleIndex].length
+            ) {
+                this.currentTitle +=
+                    this.title[this.currentTitleIndex][this.currentCharIndex];
+                this.currentCharIndex++;
+                setTimeout(this.typeTitle, this.typingSpeed);
+            } else {
+                await new Promise((resolve) =>
+                    setTimeout(resolve, this.delayBetweenTitles)
+                );
+                this.nextTitle();
+            }
+        },
+        nextTitle() {
+            this.currentTitleIndex =
+                (this.currentTitleIndex + 1) % this.title.length;
+            this.currentCharIndex = 0;
+            this.currentTitle = "";
+            this.typeTitle();
+        },
     },
 };
 </script>
+<style scoped>
+@keyframes digit {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate-digit {
+    animation: digit 0.8s infinite;
+}
+</style>
 <template>
     <div
         data-aos="zoom-in"
@@ -36,7 +76,7 @@ export default {
             class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center"
         >
             <p
-                class="mx-auto -mt-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6"
+                class="mx-auto -mt-4 mb-2 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6"
             >
                 Bem Vindo ao
                 <span
@@ -77,6 +117,12 @@ export default {
                             >{{ currentTitle }}
                         </span></span
                     >
+                    <span
+                        class="animate-digit inline-block lg:h-12 h-8 lg:-ms-2 -ms-1 me-2 border-r-[4px] lg:border-r-[6px]"
+                        :style="{
+                            borderColor: config['primary_color'],
+                        }"
+                    ></span>
                 </span>
 
                 <span class="me-4 inline-block" v-if="currentTitle != 'API'"

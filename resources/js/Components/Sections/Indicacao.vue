@@ -1,6 +1,6 @@
 <script>
 import BaseButton from "../Buttons/BaseButton.vue";
-import MoneySave from "@/Components/Vectors/MoneySave.vue"
+import MoneySave from "@/Components/Vectors/MoneySave.vue";
 
 export default {
     props: {
@@ -19,7 +19,7 @@ export default {
             color: config['primary_color'],
         }"
         data-aos="fade-up"
-        class="bg-[#ECDAB7] relative z-10 overflow-hidden py-16 px-8  mb-28"
+        class="bg-[#ECDAB7] relative z-10 overflow-hidden py-16 px-8 my-28"
     >
         <div class="container">
             <div class="-mx-4 flex flex-wrap items-center">
@@ -27,12 +27,17 @@ export default {
                     <div class="text-center lg:text-left">
                         <div class="">
                             <h1
-                                class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight "
+                                class="mt-0 mb-3 text-3xl font-bold leading-tight sm:text-4xl sm:leading-tight md:text-[40px] md:leading-tight"
                             >
-                                Premiações por indicação!<br>Ganhe até R$400,00 por indicação.
+                                Premiações por indicação!<br />Ganhe até
+                                R$400,00 por indicação.
                             </h1>
-                            <p class="w-full mb-3 text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed">
-                                Quer ganhar uma rende extra e ainda nos ajudar?<br>Faça uma indicação para a gente e receba de R$200.00 até R$400.00 !
+                            <p
+                                class="w-full mb-3 text-base font-medium leading-relaxed sm:text-lg sm:leading-relaxed"
+                            >
+                                Quer ganhar uma rende extra e ainda nos
+                                ajudar?<br />Faça uma indicação para a gente e
+                                receba de R$200.00 até R$400.00 !
                             </p>
                             <a
                                 class="font-semibold text-xl rounded-lg self-center lg:self-end inline-flex items-center justify-center bg-white py-4 px-20 hover:bg-opacity-90"
@@ -46,7 +51,7 @@ export default {
                     <div
                         class="max-sm:hidden flex flex-col bottom-[-325px] -right-[5%] absolute justify-center lg:justify-end text-center lg:text-right"
                     >
-                        <MoneySave :config="config"/>
+                        <MoneySave :config="config" />
                     </div>
                 </div>
             </div>
@@ -111,7 +116,6 @@ export default {
                         ></stop>
                     </linearGradient>
                 </defs></svg></span
-        ><span class="absolute top-4 left-4 -z-10">
-        </span>
+        ><span class="absolute top-4 left-4 -z-10"> </span>
     </section>
 </template>
